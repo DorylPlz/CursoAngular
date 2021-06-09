@@ -1,11 +1,23 @@
 "use strict";
-function activar(quien, momento, objeto) {
-    if (objeto === void 0) { objeto = 'batiseñal'; }
-    if (momento) {
-        console.log(quien + " activ\u00F3 la " + objeto + " en la " + momento);
+var miFuncion = function (a) {
+    return a.toUpperCase();
+};
+var miFuncionF = function (a) { return a.toUpperCase(); };
+var sumarN = function (a, b) {
+    return a + b;
+};
+var sumarF = function (a, b) { return a + b; };
+console.log(sumarF(1, 1));
+var hulk = {
+    nombre: 'Hulk',
+    smash: function () {
+        var _this = this;
+        setTimeout(function () {
+            console.log(this.nombre + " smash!");
+        }, 1000);
+        setTimeout(function () {
+            console.log(_this.nombre + " smash!");
+        }, 1000);
     }
-    else {
-        console.log(quien + " activ\u00F3 la " + objeto);
-    }
-}
-activar('Gordon', 'tarde');
+};
+hulk.smash();
