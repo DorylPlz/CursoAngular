@@ -1,9 +1,11 @@
 "use strict";
-function getEdad(edad) {
-    return edad + 5;
+function activar(quien, momento, objeto) {
+    if (objeto === void 0) { objeto = 'batiseñal'; }
+    if (momento) {
+        console.log(quien + " activ\u00F3 la " + objeto + " en la " + momento);
+    }
+    else {
+        console.log(quien + " activ\u00F3 la " + objeto);
+    }
 }
-var nombre = 'Daryl';
-var apellido = 'Olivares';
-var edad = 25;
-var salida = nombre + " \n" + apellido + " \n(" + (getEdad(edad) + 10) + ")";
-console.log(salida);
+activar('Gordon', 'tarde');
