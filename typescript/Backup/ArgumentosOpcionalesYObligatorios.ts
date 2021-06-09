@@ -8,4 +8,5 @@ function activar(quien: string, momento?: string, objeto: string = 'batiseñal',
 }
 
 activar('Gordon', 'tarde');
+activar('Gordon');
 
