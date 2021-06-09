@@ -1,20 +1,14 @@
-let mensaje: string = 'Hola';
-let numero: number = 123;
-let booleano: boolean = true;
-let hoy: Date = new Date();
+function getEdad(edad: number){
+    return edad + 5;
+}
 
-let cualquiercosa;
-cualquiercosa = mensaje;
-cualquiercosa = numero;
-cualquiercosa = booleano;
-cualquiercosa = hoy;
+const nombre = 'Daryl';
+const apellido = 'Olivares';
+const edad = 25;
 
-let spiderman = {
-    nombre: 'Peter',
-    edad: 30
-};
+const salida = 
+`${nombre} 
+${apellido} 
+(${getEdad(edad) + 10})`;
 
-spiderman = {
-    nombre: 'Miles',
-    edad: 16
-};
+console.log(salida);
