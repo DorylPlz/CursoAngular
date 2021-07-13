@@ -1,18 +1,28 @@
 "use strict";
 (() => {
-    const retirarDinero = (montoRetirar) => {
-        let dineroActual = 1000;
-        return new Promise((resolve, reject) => {
-            if (montoRetirar > dineroActual) {
-                reject('No hay fondos suficientes');
-            }
-            else {
-                dineroActual -= montoRetirar;
-                resolve(dineroActual);
-            }
-        });
+    const enviarMision = (xmen) => {
+        console.log(`Enviando a ${xmen.nombre} a la misión 1`);
     };
-    retirarDinero(500)
-        .then(montoActual => console.log(`Me quedan ${montoActual}`))
-        .catch(console.warn);
+    const wolverine = {
+        nombre: 'Logan',
+        edad: 60
+    };
+    enviarMision(wolverine);
+    //Para resolver el problema descrito en el comentario anterior, se hace de la siguiente forma:
+    const enviarMision2 = (xmen) => {
+        console.log(`Enviando a ${xmen.nombre} a la misión 2`);
+    };
+    const wolverine2 = {
+        nombre: 'Logan',
+        edad: 60
+    };
+    enviarMision2(wolverine2);
+    const enviarMision3 = (xmen) => {
+        console.log(`Enviando a ${xmen.nombre} a la misión 3`);
+    };
+    const wolverine3 = {
+        nombre: 'Logan',
+        edad: 60
+    };
+    enviarMision3(wolverine3);
 })();
